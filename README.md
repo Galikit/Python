@@ -1,5 +1,5 @@
 # Python Employee Attendance System
-> Basic Python project final project. [Project Description](https://docs.google.com/document/d/1I7rGC4MinyfMwoaTdh0MneBuQkmgPx_XiE9gnvnV-AY/edit#)
+> Basic Python final project. [Project Description](https://docs.google.com/document/d/1I7rGC4MinyfMwoaTdh0MneBuQkmgPx_XiE9gnvnV-AY/edit#)
 
 ## General info
 Logs new employees in Employees.csv file. 
