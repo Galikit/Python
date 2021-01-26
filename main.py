@@ -1,19 +1,21 @@
-import functions
+from data.employee_func import new_employee, list_employee, delete_emp
+from data.attendance_log import mark_attendance, emp_attendance, monthly_report, late_report
+from data.path import emp_import, path_delete_emp
 
 def attendance():
 	print("Attendance Menu \n 1. Mark Attendance \n 2. Attendance Report \n 3. Monthly Report \n 4. Late Report \n 5.Back")
 	selection=int(input("Enter choice: "))
 	if selection==1:
-		functions.mark_attendance()
+		mark_attendance()
 		attendance()
 	elif selection==2:
-		functions.emp_attendance()
+		emp_attendance()
 		attendance()
 	elif selection==3:
-		functions.monthly_report()
+		monthly_report()
 		attendance()
 	elif selection==4:
-		functions.late_report()
+		late_report()
 		attendance()
 	elif selection==5:
 		main_menu()
@@ -25,11 +27,11 @@ def emp_mngmt():
 	print("Employee Management Menu \n 1. Add Employee \n 2. Employee List \n 3. Delete Employee \n 4. Back")
 	selection=int(input("Enter choice: "))
 	if selection==1:
-		functions.new_employee()	
+		new_employee()	
 	elif selection==2:
-		functions.list_employee()
+		list_employee()
 	elif selection==3:
-		functions.delete_emp()
+		delete_emp()
 		emp_mngmt()
 	elif selection==4:
 		main_menu()
@@ -58,10 +60,10 @@ def import_export():
 	print("Import Menu \n 1. Import Employees from File \n 2. Delete Employees from File \n 3. Back")
 	selection=int(input("Enter choice: "))
 	if selection==1:
-		functions.emp_import()
+		emp_import()
 		import_export()
 	elif selection==2:
-		functions.path_delete_emp()
+		path_delete_emp()
 		import_export()
 	elif selection==3:
 		main_menu()
